@@ -1,0 +1,288 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+
+/* #Page Styles
+================================================== */
+
+/* #Media Queries
+================================================== */
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 3000px) {
+	.container { width : 95%;	text-align : center;}
+	.content { max-width: 775px; margin: auto; background-color: #000000; border: solid 1px #ffffff; }
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.container { width : 95%;	text-align : center;}
+	.content { margin: auto; background-color: #000000; border: solid 1px #ffffff; }
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {	
+	.container { width : 95%;	text-align : center;}
+	.content { margin: auto; background-color: #000000; border: solid 1px #ffffff; }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.container { width : 95%;	text-align : center;}
+	.Counter { padding-top:20px !important; width: 320px; text-align : center; margin:auto; }
+	.content { margin: auto; background-color: #000000; border: solid 1px #ffffff; }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+	.container {width : 95%; text-align : center;	}
+	.Counter { padding-top:20px !important; text-align : center; margin:auto;}
+	.content { margin: 0 auto; background-color: #000000; border: solid 1px #ffffff; }
+}
+
+.content p {
+	text-indent: 1.5em
+}
+
+.zodiac {
+	width: 165px; height: 165px; margin: 10px; float: left;
+}
+
+.button, .button:visited {
+    background: #222 url(../images/overlay.png) repeat-x;
+    display: inline-block;
+    padding: 5px 10px 6px;
+    margin: 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    position: relative;
+    cursor: pointer
+}
+
+.button:hover {
+	color: yellow !important;
+}
+
+.button:visited a {
+	color: #DDDDDD;
+}
+
+.small.button, .small.button:visited { 
+	font-size: 11px
+}
+.button, .button:visited, .medium.button, .medium.button:visited { 
+	color: #DDDDDD;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 1;
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+}
+ 
+.large.button, .large.button:visited { 
+	font-size: 14px;
+	padding: 8px 14px 9px;
+}
+ 
+.super.button, .super.button:visited { 
+	font-size: 20px;
+	padding: 8px 14px 9px;
+}
+
+.pink.button, .magenta.button:visited { 
+	background-color: #e22092; 
+}
+.pink.button:hover { 
+	background-color: #c81e82; 
+}
+.green.button, .green.button:visited { 
+	background-color: #91bd09; 
+}
+.green.button:hover { 
+	background-color: #749a02; 
+}
+.red.button, .red.button:visited { 
+	background-color: #e62727; 
+}
+.red.button:hover { 
+	background-color: #cf2525; 
+}
+.orange.button, .orange.button:visited { 
+	background-color: #ff5c00; 
+}
+.orange.button:hover { 
+	background-color: #d45500; 
+}
+.blue.button, .blue.button:visited { 
+	background-color: #2981e4; 
+}
+.blue.button:hover { 
+	background-color: #2575cf; 
+}
+.yellow.button, .yellow.button:visited { 
+	background-color: #ffb515; 
+}
+.yellow.button:hover { 
+	background-color: #fc9200;
+}
+
+
+
+/* ---- Countdown timer ---- */
+.Counter {
+	text-align : center;
+	padding-top : 5px;
+	margin-bottom : 20px;
+}
+
+ul#countdown li {
+	display : inline-block;
+	background : url('../images/time.png') top left no-repeat transparent;
+	width : 120px;
+	margin-bottom : 20px;
+	text-align : center;
+	padding-right : 20px;
+}
+
+ul#countdown li span {
+	font-size : 3em;
+	font-weight : bold;
+	color : #fff;
+	height : 120px;
+	line-height : 120px;
+	position : relative;
+}
+
+ul#countdown li .t {
+	margin-top : 10px;
+	color : #f3f3f3;
+	text-transform : uppercase;
+	font-weight : 700;
+}
+
+/* ---- Subscribe form---- */
+
+#Subscribe {
+	width : 720px;
+	height : 82px;
+	margin : 25px auto 10px auto;
+	border-radius : 4px;
+	text-align : center;
+	vertical-align: middle;
+}
+
+.email {
+	width : 500px;
+	height : 50px;
+	margin : 15px 0 0 15px;
+	background : #f3f3f3;
+	border : 0;
+	box-shadow : 0 3px 0 0 rgba(0, 0, 0, 0.1) inset, 0 4px 0 0 rgba(0, 0, 0, 0.15);
+	-webkit-appearance: none;
+	border-radius : 4px;
+	font-family : 'Lato','BenchNine';
+	font-weight : 300;
+	font-size : 18px;
+	color : #000;
+	background:url(../images/bckinput.png) repeat-x;
+	font-style : italic;
+	text-align : left;
+	line-height : 26px;
+	padding-left : 20px;
+}
+
+.email:focus {
+	outline : 0;
+	box-shadow : 0 3px 0 0 rgba(0, 0, 0, 0.2) inset, 0 4px 0 0 rgba(0, 0, 0, 0.15);
+	-webkit-appearance: none;
+}
+
+.submit {
+	width : 148px;
+	height : 52px;
+	margin : 8px 15px 15px 10px;
+	background : #25155D;
+	border : 0;
+	box-shadow : 0 1px 0 0 rgba(255, 255, 255, 0.3) inset, 0 20px 30px 0 rgba(255, 255, 255, 0.2) inset, 0 4px 0 0 rgba(0, 0, 0, 0.15);
+	border-radius : 4px;
+	-webkit-appearance: none;
+	font-family : 'BenchNine', sans-serif, Arial, Helvetica;
+	font-weight : 400;
+	font-size : 18px;
+	color : #fff;
+	line-height : 26px;
+	cursor : pointer;
+}
+
+.submit:hover {
+	box-shadow : 0 1px 0 0 rgba(255, 255, 255, 0.3) inset, 0 -20px 30px 0 rgba(255, 255, 255, 0.2) inset, 0 4px 0 0 rgba(0, 0, 0, 0.15);
+	-webkit-appearance: none;
+}
+
+.submit:active {
+	box-shadow : 0 3px 17px 3px rgba(0, 0, 0, 0.2) inset, 0 -20px 30px 0 rgba(255, 255, 255, 0.2) inset, 0 4px 0 0 rgba(0, 0, 0, 0.15);
+	-webkit-appearance: none;
+}
+
+.rounded-corners {
+	-moz-border-radius: 40px;
+	-webkit-border-radius: 40px;
+	-khtml-border-radius: 40px;
+	border-radius: 40px;
+}
+
+.transparent_class {
+	/* IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+
+	/* IE 5-7 */
+	filter: alpha(opacity=60);
+
+	/* Netscape */
+	-moz-opacity: 0.6;
+
+	/* Safari 1.x */
+	-khtml-opacity: 0.6;
+
+	/* Good browsers */
+	opacity: 0.6;
+}
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot@iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/

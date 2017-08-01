@@ -1,0 +1,1 @@
+Your credit card ending in {{ $last4 }} was successfully charged for ${{ $amount }} on {{ $createdDate }} at {{ $createdTime }}.

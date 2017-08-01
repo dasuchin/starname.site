@@ -1,0 +1,20 @@
+---
+ip: "192.168.10.11"
+memory: 2048
+cpus: 1
+hostname: starname.dev
+name: starname-site
+provider: virtualbox
+
+authorize: ~/.ssh/id_rsa.pub
+
+keys:
+    - ~/.ssh/id_rsa
+
+folders:
+    - map: "C:/some/path/to/code/starname.site"
+      to: "/home/vagrant/starname-site"
+
+sites:
+    - map: starname.dev
+      to: "/home/vagrant/starname-site/public"

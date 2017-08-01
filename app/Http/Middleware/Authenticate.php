@@ -1,0 +1,38 @@
+<?php
+
+namespace App\Http\Middleware;
+
+use Closure;
+use Illuminate\Support\Facades\Auth;
+
+class Authenticate
+{
+    /**
+     * Handle an incoming request.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Closure  $next
+     * @param  string|user  $role
+     * @return mixed
+     */
+    public function handle($request, Closure $next, $role = 'user')
+    {
+        if (Auth::guard()->guest()) {
+            if ($request->ajax() || $request->wantsJson()) {
+                return response('Unauthorized.', 401);
+            } else {
+                return redirect()->guest('/login');
+            }
+        }
+
+        if ($role == 'all') {
+            return $next($request);
+        }
+
+        if (!Auth::user()->hasRole($role) && !Auth::user()->hasRole('administrator')) {
+            return response('Unauthorized.', 401);
+        }
+
+        return $next($request);
+    }
+}
