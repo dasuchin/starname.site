@@ -1,0 +1,2 @@
+database/dumps/stars.zip filter=lfs diff=lfs merge=lfs -text
+database/dumps/junk_stars.zip filter=lfs diff=lfs merge=lfs -text
